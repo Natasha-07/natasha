@@ -1,87 +1,175 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body,
         html {
             height: 100%;
             margin: 0;
+            font-size: 20px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
         }
 
         .container {
-            position: relative;
+            text-align: left;
+            color: rgb(10, 10, 10);
+            background-image: url("back.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            margin-left: 17%;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+        }
+
+        .social-icons a {
+            color: rgb(40, 72, 143);
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .w3-sidebar {
+            width: 17%;
+            background-color: rgb(40, 72, 143);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            height: 100%;
+        }
+
+        .w3-sidebar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .w3-bar-item {
+            font-size: 25px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
             text-align: center;
-            color: white;
         }
 
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        ul {
-            font-family: Roboto, sans-serif;
-            font-size: 20px;
+        h1 {
+            font-size: 50px;
+            color: rgb(40, 72, 143);
         }
 
-        .special-list ul {
-            font-family: Roboto, sans-serif;
+        @media (max-width: 768px) {
+            .w3-sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .container {
+                margin-left: 0;
+            }
+
+            .w3-bar-item {
+                display: inline-block;
+                width: auto;
+                margin: 0 10px;
+            }
+
+            .w3-sidebar img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 18px;
+            }
+
+            .social-icons a {
+                font-size: 24px;
+            }
+
+            .w3-bar-item {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-    <div class="w3-sidebar w3-dark-blue w3-bar-block" style="width: 17%; background-color:  rgb(40, 72, 143); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div class="w3-sidebar w3-dark-blue w3-bar-block"
+        style="width: 17%; background-color:  rgb(40, 72, 143); display: flex; flex-direction: column; align-items: center; justify-content: center;">
         <div style="width: 180px; height: 180px; overflow: hidden; border-radius: 50%;">
             <img src="nazia.jpg" width="100%" height="100%">
-        </div>    
+        </div>
         <br><br>
-        <a href="index.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>About</strong></a>
-        <a href="publication.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Publications</strong></a>
-        <a href="education.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Education</strong></a>
-        <a href="" class="w3-bar-item w3-button" style="font-size: 20px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Skills</strong></a>
-        <a href="projects.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Projects</strong></a>
-        <a href="papers.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Documents</strong></a>
-        <a href="contact.html" class="w3-bar-item w3-button" style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Contact</strong></a>
+        <a href="index.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>About</strong></a>
+        <a href="publication.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Publications</strong></a>
+        <a href="education.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Education</strong></a>
+        <a href="" class="w3-bar-item w3-button"
+            style="font-size: 20px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Skills</strong></a>
+        <a href="projects.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Projects</strong></a>
+        <a href="papers.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Documents</strong></a>
+        <a href="contact.html" class="w3-bar-item w3-button"
+            style="font-size: 25px; font-family: Trebuchet MS, Helvetica, sans-serif;"><strong>Contact</strong></a>
     </div>
     <div style="margin-left: 17%; padding: 20px; text-align: left; display: flex; justify-content: space-between;">
         <div>
-            <h1 style="margin-top: 10%; font-size: 60px; font-family: Trebuchet MS, Helvetica, sans-serif; color: rgb(40, 72, 143);">Skills</h1>
+            <h1
+                style="margin-top: 10%; font-size: 60px; font-family: Trebuchet MS, Helvetica, sans-serif; color: rgb(40, 72, 143);">
+                Skills</h1>
             <p style="font-size: 20px; font-family: Roboto, sans-serif;"><strong>Programming Languages</strong>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>C & C++</li>
-                    <li>HTML & CSS</li>
-                </ul>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>C & C++</li>
+                <li>HTML & CSS</li>
+            </ul>
             </p>
         </div>
-    
+
         <div style="margin-top: 10.5%; text-align: center;">
             <p style="text-align: left; font-size: 20px; font-family: Roboto, sans-serif;"><strong>Frameworks</strong>
-                <ul style="text-align: left;">
-                    <li>TensorFlow</li>
-                    <li>Django</li>
-                    <li>Selenium Framework</li>
-                </ul>
+            <ul style="text-align: left;">
+                <li>TensorFlow</li>
+                <li>Django</li>
+                <li>Selenium Framework</li>
+            </ul>
             </p>
         </div>
-    
+
         <div style="margin-top: 10.5%; text-align: right; margin-right: 30%;">
-            <p style="text-align: left; font-size: 20px; font-family: Roboto, sans-serif;"><strong>Working Platforms</strong>
-                <ul style="text-align: left;">
-                    <li>Visual Studio</li>
-                    <li>Jupyter notebook</li>
-                    <li>Kaggle notebook</li>
-                    <li>Android studio</li>
-                </ul>
+            <p style="text-align: left; font-size: 20px; font-family: Roboto, sans-serif;"><strong>Working
+                    Platforms</strong>
+            <ul style="text-align: left;">
+                <li>Visual Studio</li>
+                <li>Jupyter notebook</li>
+                <li>Kaggle notebook</li>
+                <li>Android studio</li>
+            </ul>
             </p>
         </div>
-    </div>   
+    </div>
 </body>
+
 </html>
