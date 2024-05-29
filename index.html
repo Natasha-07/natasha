@@ -71,12 +71,19 @@
     @media (max-width: 768px) {
       .container {
         margin-left: 0;
+        padding-left: 20px;
+        /* Add left padding to compensate for removed margin */
+        padding-right: 20px;
+        /* Add right padding to compensate for removed margin */
       }
 
       .w3-sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: static;
+        /* Change position to static to allow content to flow */
+        margin-bottom: 20px;
+        /* Add some bottom margin to separate sidebar from content */
       }
 
       .w3-sidebar img {
